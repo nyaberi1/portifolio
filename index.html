@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Research Portfolio</title>
+<style>
+:root {
+  --navy: #142b45;
+  --blue: #2864a0;
+  --light: #f4f7fb;
+  --text: #26364a;
+  --muted: #65758a;
+}
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+}
+nav {
+  position: sticky; top: 0;
+  background: white;
+  padding: 16px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5eaf0;
+  z-index: 10;
+}
+nav a {
+  text-decoration: none;
+  color: var(--navy);
+  margin-left: 18px;
+  font-size: 13px;
+}
+.logo { font-weight: bold; color: var(--navy); }
+.hero {
+  background: var(--navy);
+  color: white;
+  padding: 100px 9%;
+}
+.hero h1 { font-size: 44px; margin: 10px 0; }
+.hero p { max-width: 650px; color: #d5dfeb; }
+.tag {
+  display: inline-block;
+  background: #e8f1fa;
+  color: var(--blue);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 4px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 10px 8px 0 0;
+  border: 1px solid #8da9c7;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+section { padding: 65px 9%; }
+section:nth-child(even) { background: var(--light); }
+h2 { color: var(--navy); margin-bottom: 25px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 22px;
+  border: 1px solid #e4eaf1;
+  border-radius: 10px;
+}
+.card h3 { color: var(--blue); }
+.small { color: var(--muted); font-size: 14px; }
+footer {
+  background: var(--navy);
+  color: white;
+  padding: 30px 9%;
+  text-align: center;
+}
+a { color: var(--blue); }
+@media(max-width:650px) {
+  nav { align-items: flex-start; flex-direction: column; }
+  nav a { margin: 5px 10px 0 0; display: inline-block; }
+  .hero h1 { font-size: 34px; }
+  section { padding: 45px 6%; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">YOUR NAME</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <p>COMPUTER ENGINEERING | ARTIFICIAL INTELLIGENCE</p>
+  <h1>Researching Intelligence.<br>Advancing Engineering.</h1>
+  <p>
+    Master's Student in Computer Engineering exploring
+    Generative AI, Computer Vision, Digital Image
+    Correlation, and Natural Language Processing.
+  </p>
+  <a class="btn" href="#research">Explore Research</a>
+  <a class="btn" href="YOUR_CV_LINK">Download CV</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a postgraduate Computer Engineering researcher
+    interested in the intersection of Artificial Intelligence,
+    visual computing, and intelligent engineering systems.
+    My academic journey combines research experience,
+    computational development, and interdisciplinary
+    exploration of emerging AI technologies.
+  </p>
+  <p>
+    Currently pursuing my Master's degree at
+    [University Name], I am exploring computational
+    approaches to complex engineering and information
+    processing problems.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research Interests</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Generative AI</h3>
+      <p>Generative models, large language models,
+      diffusion models, and intelligent systems.</p>
+    </div>
+    <div class="card">
+      <h3>Computer Vision</h3>
+      <p>Image processing, visual recognition,
+      object detection, and image segmentation.</p>
+    </div>
+    <div class="card">
+      <h3>Digital Image Correlation</h3>
+      <p>Image-based displacement measurement,
+      deformation estimation, and strain analysis.</p>
+    </div>
+    <div class="card">
+      <h3>Natural Language Processing</h3>
+      <p>Language models, text analysis,
+      semantic understanding, and NLP applications.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Research Experience</h2>
+  <div class="card">
+    <h3>Research Assistant</h3>
+    <p><strong>[Undergraduate University Name]</strong></p>
+    <p class="small">[Start Year – End Year]</p>
+    <ul>
+      <li>Contributed to academic research projects
+      and research methodology development.</li>
+      <li>Used Python frameworks and computational
+      tools for research and data analysis.</li>
+      <li>Participated in academic conferences and
+      contributed to conference paper preparation.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Research & Technical Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Project 01</h3>
+      <p>[Generative AI project title]</p>
+      <p class="small">Tools: Python, PyTorch</p>
+      <a href="YOUR_GITHUB_LINK">View project →</a>
+    </div>
+    <div class="card">
+      <h3>Project 02</h3>
+      <p>[Computer Vision project title]</p>
+      <p class="small">Tools: Python, OpenCV</p>
+      <a href="YOUR_GITHUB_LINK">View project →</a>
+    </div>
+    <div class="card">
+      <h3>Project 03</h3>
+      <p>[Digital Image Correlation project]</p>
+      <p class="small">Tools: MATLAB, Python</p>
+      <a href="YOUR_GITHUB_LINK">View project →</a>
+    </div>
+    <div class="card">
+      <h3>Project 04</h3>
+      <p>[Natural Language Processing project]</p>
+      <p class="small">Tools: Python, Transformers</p>
+      <a href="YOUR_GITHUB_LINK">View project →</a>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications & Conferences</h2>
+  <div class="card">
+    <p>[Author names], "[Paper Title],"
+    [Conference/Journal], [Year].</p>
+    <p class="small">Add published papers, accepted papers,
+    presentations, and manuscripts in progress with
+    their correct publication status.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <span class="tag">Python</span>
+  <span class="tag">MATLAB</span>
+  <span class="tag">PyTorch</span>
+  <span class="tag">TensorFlow</span>
+  <span class="tag">OpenCV</span>
+  <span class="tag">Scikit-learn</span>
+  <span class="tag">Git & GitHub</span>
+  <span class="tag">Jira</span>
+  <span class="tag">Image Processing</span>
+  <span class="tag">Deep Learning</span>
+</section>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <p>Open to research collaborations, academic discussions,
+  and opportunities in Artificial Intelligence.</p>
+  <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
+  <p>
+    <a href="YOUR_LINKEDIN">LinkedIn</a> |
+    <a href="YOUR_GITHUB">GitHub</a> |
+    <a href="YOUR_SCHOLAR">Google Scholar</a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Your Name | Academic Research Portfolio
+</footer>
+
+</body>
+</html>
